@@ -1,1 +1,29 @@
-<p>contact works!</p>
+<app-navbar></app-navbar>
+
+<section class="contactFormContainer">
+  <form class="contactForm" id="contactForm" (ngSubmit)="submit()">
+    <div class="inputContainer">
+      <label for="prenom">Votre prénom</label>
+      <input type="text" name="" id="prenom" />
+    </div>
+    <div class="inputContainer">
+      <label for="nom">Votre nom</label>
+      <input type="text" name="" id="nom" />
+    </div>
+    <div class="inputContainer">
+      <label for="email">Votre adresse e-mail</label>
+      <input type="text" name="" id="email" />
+    </div>
+    <div class="inputContainer">
+      <label for="tel">Votre numéro de téléphone</label>
+      <input type="text" name="" id="tel" />
+    </div>
+    <div class="inputContainer">
+      <label for="message">Votre message</label>
+      <textarea name="" id="message" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Envoyer" name="" id="submitButton" />
+    </div>
+  </form>
+</section>
