@@ -1,0 +1,25 @@
+$font1: "Montserrat", sans-serif;
+$darkGrey: #444444;
+$ocre: #cb9558;
+$lightGrey: #f7f7f7;
+$lightBlack: #222;
+$transition-speed: 0.4s;
+$burgerSize: 0.6;
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-centered-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin paragraphe {
+  line-height: 1.75;
+  font-weight: 500;
+}

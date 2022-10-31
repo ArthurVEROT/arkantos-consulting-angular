@@ -1,0 +1,39 @@
+<section
+  class="navbarSection navbar-unscroll"
+  [class.scrolled]="scrolled"
+  id="navbar"
+>
+  <div class="header">
+    <div><a href="../index.html">Logo</a></div>
+    <nav class="desktopNavbar">
+      <ul>
+        <li><a routerLink="/about">À propos</a></li>
+        <li><a routerLink="/mon-expertise">Mon expertise</a></li>
+        <li><a routerLink="/about">Étude de cas</a></li>
+        <li><a routerLink="/about">Ressources</a></li>
+        <li>
+          <a class="unProjet" routerLink="/contact">Un projet ?</a>
+        </li>
+      </ul>
+    </nav>
+    <div (click)="openMenu()" class="menu" #burgerMenu>
+      <span class="menu-global menu-top" #menuTop></span>
+      <span class="menu-global menu-middle" #menuMiddle></span>
+      <span class="menu-global menu-bottom" #menuBottom></span>
+    </div>
+  </div>
+
+  <nav class="mobileNavbar unvisible" #mobileNavbar>
+    <ul>
+      <li><a routerLink="/about">À propos</a></li>
+      <li><a routerLink="/mon-expertise">Mon expertise</a></li>
+      <li><a routerLink="/about">Étude de case</a></li>
+      <li><a routerLink="/about">Ressources</a></li>
+      <div>
+        <li>
+          <a class="devis-link" routerLink="/contact">Un projet ?</a>
+        </li>
+      </div>
+    </ul>
+  </nav>
+</section>

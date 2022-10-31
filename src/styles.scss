@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./app/utilities/variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font1;
+  color: $darkGrey;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Mobile */
+section,
+footer {
+  position: relative;
+  padding: 50px 10vw 50px 10vw;
+}
+
+/* Tablet  */
+@media (min-width: 600px) {
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  section,
+  footer {
+    position: relative;
+    padding: 100px 10vw 100px 10vw;
+  }
+}

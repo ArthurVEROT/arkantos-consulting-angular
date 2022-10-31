@@ -1,0 +1,27 @@
+@import "../../utilities/variables.scss";
+
+.titleContainer {
+  @include flex-centered;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 0;
+  margin: 10px 0;
+  margin-bottom: 20px;
+
+  h3 {
+    padding: 10px 0;
+  }
+
+  .divider {
+    width: 11rem;
+    height: 5px;
+    border-radius: 5px;
+    background-color: $ocre;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    margin: 10px 0;
+  }
+}
+.titleContainer:hover .divider {
+  width: 20rem;
+}

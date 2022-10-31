@@ -1,0 +1,362 @@
+@import "../../utilities/variables.scss";
+
+/* Mobile */
+//////////////////////////////////////
+/////////// Intro Section mobile /////////////
+////////////////////////////////////////
+.introSection {
+  background-color: $lightGrey;
+  padding: 150px 10vw 100px 10vw;
+
+  .content {
+    @include flex-centered-mobile;
+    gap: 32px;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .waveDesktop {
+    display: none;
+  }
+  .waveMobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .waveMobile svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 79px;
+  }
+
+  .waveMobile .shape-fill {
+    fill: #ffffff;
+  }
+}
+
+////////////////////////////////////////
+////////Presentation Section mobile///////////
+////////////////////////////////////////
+
+.presentationSection {
+  .presentation {
+    div {
+      // border: 1px solid black;
+    }
+    h2 {
+      padding: 10px 0;
+    }
+    .content {
+      @include flex-centered-mobile;
+
+      .presentationTextContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        margin-bottom: 30px;
+      }
+
+      p {
+        @include paragraphe;
+      }
+      img {
+        border-radius: 50%;
+        max-width: 225px;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////
+//////// Reference Section mobile///////////
+////////////////////////////////////////
+
+.referenceSection {
+  background-color: $lightGrey;
+
+  .references {
+    @include flex-centered-mobile;
+    gap: 32px;
+  }
+
+  .companiesContainer {
+    @include flex-centered;
+    flex-wrap: wrap;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+////////////////////////////////////////
+//////// Expertise Section mobile ///////////
+////////////////////////////////////////
+.expertiseSection {
+  div {
+    // border: 1px solid black;
+  }
+  .allExpertiseContainer {
+    @include flex-centered-mobile;
+
+    .oneExpertiseContainer {
+      padding-bottom: 80px;
+
+      .imageContainer {
+        @include flex-centered;
+      }
+
+      img {
+        max-width: 100px;
+        padding-bottom: 30px;
+      }
+
+      h3 {
+        padding-bottom: 10px;
+      }
+
+      p {
+        @include paragraphe;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////
+//////////// Change ERP mobile////////////////////
+////////////////////////////////////////
+.changeERPSection {
+  @include flex-centered-mobile;
+  gap: 1.5rem;
+  background-color: $ocre;
+  margin-bottom: 100px;
+
+  h2 {
+    color: white;
+    text-align: center;
+  }
+}
+
+////////////////////////////////////////
+//////////// Footer mobile////////////////////
+////////////////////////////////////////
+
+footer {
+  background-color: $lightGrey;
+
+  .curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 104px;
+  }
+
+  .curve .shape-fill {
+    fill: #ffffff;
+  }
+
+  .container {
+    @include flex-centered-mobile;
+    gap: 52px;
+    padding: 30px 0;
+
+    .text {
+      @include flex-centered-mobile;
+      p {
+        text-align: center;
+        line-height: 1.75;
+        font-weight: 500;
+      }
+    }
+
+    .info {
+      @include flex-centered-mobile;
+      gap: 22px;
+      padding-bottom: 20px;
+
+      li {
+        text-align: center;
+        list-style: none;
+        line-height: 1.75;
+      }
+
+      .linkedinContainer {
+        position: relative;
+      }
+
+      .fa-linkedin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $ocre;
+        font-size: 30px;
+        transition: $transition-speed;
+      }
+      .fa-linkedin:hover {
+        font-size: 36px;
+      }
+    }
+
+    .callToAction {
+      @include flex-centered-mobile;
+      gap: 16px;
+    }
+  }
+}
+
+/* Tablet  */
+@media (min-width: 600px) {
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  //////////////////////////////////////
+  /////////// Intro Section desktop/////////////
+  ////////////////////////////////////////
+
+  .introSection {
+    padding-bottom: 200px;
+    .content {
+      flex-direction: row;
+
+      h1 {
+        font-size: 4rem;
+        padding: 0 10px;
+      }
+    }
+
+    .waveMobile {
+      display: none;
+    }
+    .waveDesktop {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+
+    .waveDesktop svg {
+      position: relative;
+      display: block;
+      width: calc(137% + 1.3px);
+      height: 206px;
+    }
+
+    .waveDesktop .shape-fill {
+      fill: #ffffff;
+    }
+  }
+
+  ////////////////////////////////////////
+  ////////Presentation Section desktop///////////
+  ////////////////////////////////////////
+
+  .presentationSection {
+    .presentation {
+      div {
+        // border: 1px solid black;
+      }
+      .content {
+        flex-direction: row;
+
+        .presentationTextContainer {
+          padding-right: 30px;
+          margin: 0;
+        }
+        .img-container {
+          padding: 0 100px;
+        }
+      }
+    }
+  }
+
+  ////////////////////////////////////////
+  //////// Reference Section desktop///////////
+  ////////////////////////////////////////
+
+  ////////////////////////////////////////
+  //////// Expertise Section desktop///////////
+  ////////////////////////////////////////
+  .expertiseSection {
+    // div { border: 1px solid black;}
+    .allExpertiseContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: baseline;
+
+      .oneExpertiseContainer {
+        width: 30vw;
+        padding: 40px 30px;
+
+        img {
+          max-width: 150px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  ////////////////////////////////////////
+  //////////// Change ERP Desktop////////////////////
+  ////////////////////////////////////////
+  .changeERPSection {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 10vw 50px 10vw;
+
+    h2 {
+      font-size: 2rem;
+    }
+    .contactButton {
+      background-color: white;
+      color: $lightBlack;
+    }
+    .contactButton:hover {
+      color: $ocre;
+    }
+  }
+
+  ////////////////////////////////////////
+  //////////// Footer desktop////////////////////
+  ////////////////////////////////////////
+
+  footer {
+    .container {
+      flex-direction: row;
+
+      .text {
+        flex: 1 1 0px;
+      }
+
+      .info {
+        flex: 1 1 0px;
+      }
+
+      .callToAction {
+        flex: 1 1 0px;
+      }
+    }
+  }
+}
