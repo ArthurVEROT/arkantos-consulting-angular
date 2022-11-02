@@ -1,32 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { ButtonComponent } from './components/button/button.component';
-import { SectionTitleComponent } from './components/section-title/section-title.component';
-import { MonexpertiseComponent } from './pages/monexpertise/monexpertise.component';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
+
+import { NavbarModule } from './components/navbar/navbar.module';
+import { ButtonModule } from './components/button/button.module';
+import { SectionTitleModule } from './components/section-title/section-title.module';
+import { MonexpertiseModule } from './pages/monexpertise/monexpertise.module';
+import { HomeModule } from './pages/home/home.module';
+import { AboutModule } from './pages/about/about.module';
+import { ContactModule } from './pages/contact/contact.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    ButtonComponent,
-    SectionTitleComponent,
-    MonexpertiseComponent,
-    HomeComponent,
-    AboutComponent,
-    ContactComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NavbarModule,
+    ButtonModule,
+    SectionTitleModule,
+    MonexpertiseModule,
+    HomeModule,
+    AboutModule,
+    ContactModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

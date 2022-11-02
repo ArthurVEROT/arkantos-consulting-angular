@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { ButtonComponent } from 'src/app/components/button/button.component';
-import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
-import { SectionTitleComponent } from 'src/app/components/section-title/section-title.component';
 import { MonexpertiseComponent } from './monexpertise.component';
+import { RouterModule } from '@angular/router';
+
+import { ButtonModule } from 'src/app/components/button/button.module';
+import { NavbarModule } from 'src/app/components/navbar/navbar.module';
+import { SectionTitleModule } from 'src/app/components/section-title/section-title.module';
 
 @NgModule({
-  imports: [ButtonComponent, NavbarComponent, SectionTitleComponent],
   declarations: [MonexpertiseComponent],
+  imports: [ButtonModule, NavbarModule, SectionTitleModule, RouterModule],
   providers: [],
 })
-export class ProfileModule {}
+export class MonexpertiseModule {}

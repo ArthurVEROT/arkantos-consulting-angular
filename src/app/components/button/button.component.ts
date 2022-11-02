@@ -9,6 +9,7 @@ export class ButtonComponent implements OnInit {
 
   @Input() text!: string;
   @Input() rank: string = 'primary';
+  // @Input() link!: string
 
   constructor() { }
 
