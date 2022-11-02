@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ContactComponent } from './contact.component';
 import { ButtonModule } from 'src/app/components/button/button.module';
@@ -8,7 +10,14 @@ import { SectionTitleModule } from 'src/app/components/section-title/section-tit
 
 @NgModule({
   declarations: [ContactComponent],
-  imports: [ButtonModule, NavbarModule, SectionTitleModule, RouterModule],
+  imports: [
+    ButtonModule,
+    NavbarModule,
+    SectionTitleModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
   providers: [],
 })
 export class ContactModule {}
