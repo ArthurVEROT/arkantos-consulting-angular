@@ -1,0 +1,6 @@
+{
+  "/api": {
+  "target": "https://arkantos-consulting.cyclic.app/prospect",
+  "secure": false
+  }
+  }

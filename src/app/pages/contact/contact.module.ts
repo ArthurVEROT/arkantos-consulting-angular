@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact.component';
 import { ButtonModule } from 'src/app/components/button/button.module';
 import { NavbarModule } from 'src/app/components/navbar/navbar.module';
@@ -16,7 +16,8 @@ import { SectionTitleModule } from 'src/app/components/section-title/section-tit
     SectionTitleModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
 })
